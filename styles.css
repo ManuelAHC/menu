@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #003366;
+    color: #fff;
+    position: fixed; /* Fija el menú */
+    top: 0; /* Lo fija en la parte superior */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Despliega los elementos horizontalmente */
+}
+
+.menu ul li {
+    /* display: inline; No se necesita más */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #005588;
+}
+
+.contenido {
+    padding-top: 60px; /* Añade espacio en la parte superior para evitar solapamiento con el menú */
+}
+
+.contenido div {
+    margin-bottom: 40px;
+}
+
+.contenido h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+.contenido p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.contenido ul {
+    margin-top: 10px;
+}
+
+.contenido ul li {
+    margin-bottom: 5px;
+}
+
+.contenido address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+/* Estilos previos permanecen igual */
+
+.menu .submenu {
+    display: none; /* Oculta inicialmente el submenu */
+    position: absolute; /* Lo posiciona de forma absoluta */
+    background-color: #003366;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.menu .dropdown:hover .submenu {
+    display: block; /* Muestra el submenu cuando se pasa el mouse sobre el botón */
+}
+
+.menu .submenu li {
+    display: block;
+}
+
+.menu .submenu li a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu .submenu li a:hover {
+    background-color: #005588;
+}
